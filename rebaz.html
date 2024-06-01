@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shnan Pharmacy</title>
+    <link rel="stylesheet" href="rebaz.css">
+</head>
+<body >
+    <div class="container" style="background-image: url(1.png); ">
+        <h1 style="font-family: calibri;">shnan Pharmacy </h1>
+        <input type="text" id="searchInput"  style="font-family: calibri;text-align: right;" placeholder="...ناوی دەرمان داخڵ بکە">
+        <div class="buttons">
+            <button onclick="searchMedicine()" style="font-family: calibri;">گەران</button>
+            <button onclick="showAddForm()" style="font-family: calibri;"> زیادکردنی دەرمان </button>
+        </div>
+        <div id="result" class="result"></div>
+        <div id="addMedicineForm" class="add-medicine-form">
+            <h2 style="font-family: calibri; text-align: center; font-weight: bolder;">زیادکردنی دەرمان</h2>
+            <input type="text" id="medicineName"  style="font-family: calibri; text-align: right;"  placeholder="ناوی دەرمان ">
+            <input type="text" id="medicinePrice" style="font-family: calibri;text-align: right;" placeholder="نرخ">
+            <input type="text" id="medicineQuantity" style="font-family: calibri;text-align: right;" placeholder="کوالێتی">
+            <input type="text" id="medicineBarcode" style="font-family: calibri;text-align: right;" placeholder="بارکۆد">
+            <input type="text" id="medicineImage" style="font-family: calibri;text-align: right;" placeholder="لینکی وێنە">
+            <div class="buttons">
+                <button onclick="addMedicine()" style="font-family: calibri; text-align:center ;">زیادکردن</button>
+                <button onclick="hideAddForm()"  style="font-family: calibri;text-align: center;">گەرانەوە</button>
+            </div>
+        </div>
+    </div>
+    <script src="rebaz.js"></script>
+</body>
+</html>
